@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1_act"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="332dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/IM_act1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/iconrelativel"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/icon_relative_layout">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="166dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="59dp"
+            android:layout_marginRight="59dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/bank1">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imageButton3"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/butimage1"
+        android:cropToPadding="false"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:contentDescription="@string/IM2act1"
+            app:srcCompat="@drawable/shape_bottom">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/Icon_Relativel"
+            app:srcCompat="@drawable/map_pin">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="44dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@android:string/dialog_alert_title"
+        android:src="@drawable/buttom_enter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button">
+
+    </ImageButton>
+
+    <RelativeLayout
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3">
+
+        <ImageView
+            android:id="@+id/imval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:cropToPadding="true"
+            android:drawingCacheQuality="auto"
+            app:srcCompat="@drawable/icon_valute">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="47dp"
+            android:layout_toEndOf="@+id/imval"
+            android:layout_toRightOf="@+id/imval"
+            android:text="@string/textview" />
+
+        <TextView
+            android:id="@+id/textViewUS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="73dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginBottom="11dp"
+            android:text="@string/textview" />
+
+        <TextView
+            android:id="@+id/textViewEU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginRight="66dp"
+            android:layout_marginBottom="11dp"
+            android:layout_toEndOf="@+id/textViewUS"
+            android:layout_toRightOf="@+id/textViewUS"
+            android:text="@string/textview" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
